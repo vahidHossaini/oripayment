@@ -3,14 +3,24 @@ module.exports = class paymentBootstrap{
   {
     this.funcs=[
       {
-          name:'sampleFunction',
-          title:'this is sample' ,
+          name:'getLog', 
+      }, 
+      {
+          name:'purchase', 
+      }, 
+      {
+          name:'request', 
           inputs:[
 			{
-				name:'user',
-				type:'UserInterface',
+				name:'name',
+				type:'string',
 				nullable:false
-			}
+			},
+			{
+				name:'amount',
+				type:'string',
+				nullable:false
+			},
           ]
       }, 
 	  
@@ -18,6 +28,18 @@ module.exports = class paymentBootstrap{
 	   
     ]
     this.auth=[ 
+            {
+                role: 'login',
+                name: 'uploadStream'
+            },
+            {
+                role: 'login',
+                name: 'uploadStream'
+            },
+            {
+                role: 'login',
+                name: 'uploadStream'
+            },
         ]
   }
 }

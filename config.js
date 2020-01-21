@@ -2,11 +2,21 @@ module.exports = class paymentConfig
 {
     constructor(config)
     { 
-         
+         this.config=config;
     }
     getPackages()
     {
-       return []
+        var pk={};
+        if(this.config.drivers)
+        {
+            for(var a of this.config.drivers)
+                if(a.type=="mellat")
+                    pk["mellat-payment"]=true;
+        }
+        var arr=[]
+        for(var a in pk)
+            arr.push({name:a})
+       return arr
     }
     getMessage()
 	{
