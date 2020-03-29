@@ -30,15 +30,15 @@ module.exports = class paymentBootstrap{
     this.auth=[ 
             {
                 role: 'login',
-                name: 'uploadStream'
+                name: 'getLog'
             },
             {
                 role: 'login',
-                name: 'uploadStream'
+                name: 'purchase'
             },
             {
                 role: 'login',
-                name: 'uploadStream'
+                name: 'request'
             },
         ]
   }

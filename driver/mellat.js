@@ -21,6 +21,7 @@ module.exports=class mellatService
             var direct='<form id="myForm" action="https://bpm.shaparak.ir/pgwchannel/startpay.mellat" method="post"><input type="hidden" name="RefId" value="'+resp.RefId+'" /> </form><script>document.getElementById("myForm").submit();</script>'
            
             var data = {_id:resp.RefId:obj:{RefId:resp.RefId},}
+            return data;
         }catch(exp)
         {
             

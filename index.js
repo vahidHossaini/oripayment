@@ -32,7 +32,7 @@ module.exports = class paymentIndex
         if(!driver)
             return func({m:'payment001'});
         var data= await driver.request(dt.amount,session.userid);
-        var log={_id:data._id,submitDate:new Date(),amount:dt.amount,data:data.obj,userid:session.userid}
+        var log={_id:data._id,submitDate:new Date(),amount:dt.amount,data:data.obj,userid:session.userid,type:dt.name}
         await global.db.Save(self.context,'payment_log',["_id"],log) 
 		return func(null,data);
 	}
@@ -52,7 +52,7 @@ module.exports = class paymentIndex
         await global.db.Save(self.context,'payment_log',["_id"],{_id:id,resp,}); 
         if(resp.isDone && driver.wallet)
         {
-            await global.wallet.request(id,self.config.wallet.type,log.amount,log.userid); 
+            await global.wallet.request(id,driver.wallet.type,log.amount,log.userid); 
         }
             
     }
