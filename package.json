@@ -1,23 +1,49 @@
 {
-  "name": "oripayment",
-  "version": "0.0.2",
+  "_from": "oripayment",
+  "_id": "oripayment@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-1qPssN5rjQDndiQX3H+0O6fDBUq4HivYBBI6toTQsZp5jmHIiiUZw093CRE/iGr34lhvBW0kUjkRfwKghSOhLw==",
+  "_location": "/oripayment",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "oripayment",
+    "name": "oripayment",
+    "escapedName": "oripayment",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/oripayment/-/oripayment-0.0.2.tgz",
+  "_shasum": "1f1981161e08c9a588b7d9697842604577e05b4f",
+  "_spec": "oripayment",
+  "_where": "C:\\publish\\areax\\areaxserver",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/vahidHossaini/oripayment/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "origami payment",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vahidHossaini/oripayment.git"
-  },
+  "homepage": "https://github.com/vahidHossaini/oripayment#readme",
   "keywords": [
     "origamocore",
     "payment"
   ],
-  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vahidHossaini/oripayment/issues"
+  "main": "index.js",
+  "name": "oripayment",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahidHossaini/oripayment.git"
   },
-  "homepage": "https://github.com/vahidHossaini/oripayment#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.4"
 }

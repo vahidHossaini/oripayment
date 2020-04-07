@@ -32,8 +32,10 @@ module.exports = class paymentConfig
     {
       return {
 		drivers:[
-            name:"",
+		{
+			name:"",
             type:""
+		}
         ]
 		 
       }
